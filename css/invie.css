@@ -1,102 +1,399 @@
-body{
-	font-family: 'Comic Sans MS', sans-serif;
-	margin:0;
-}
-.portada{
-	background-image: url('..'/image/background.png);
-	color: red;
-	padding: 20px;
-}
-.contenedor{
-	width: 800px;
-	margin: auto;
-}
-.titulo{
-	font-family: 'Montserrat',sans-serif;
-	font-size: 70px;
-	margin-bottom: 0;
-	margin-top: 70px;
-}
-.title-a{
-	font-size: 24px;
-	margin-top: 0;
-}
-.title-b{
-	font-size: 50px;
-	margin-bottom: 20px;
-}
-button{
-	border-radius: 5px;
-	border:none;
-	background: 7px;
-}
-.guitarras{
-	color: #1F313C;
-}
-.guitarras h2{
-	font-family: 'Montserrat', sans-serif;
-	font-size: 35px;
-}
-.portada button {
-	margin-bottom: 70px;
-}
-.menu{
-	font-size: 24px;
-	display: inline-block;
-	position: absolute;
-	right: 0;
-}
-.menu li {
-	display: inline-block;
-	margin-left: 30px;
-}
-.logotipo{
-	display: inline-block;
-}
-.guitarra{
-	margin: 10px;
-	padding: 10px;
-	border: 10px;
-	border-radius: 8px;
-}
-.guitarra ol{
-	padding: 0;
-}
-.derecha{
-	float: right;
-	position: relative;
-	top: -127px;
-}
-.izquierda{
-	float: left;
-	position: relative;
-	top: 80px;
-}
-.contenedor-guitarra-a{
-	padding-left: 370px;
-}
-.contenedor-guitarra-b{
-	margin-left: 370px;
-}
-.header{
-	position: relative;
-}
-table{
-	width: 100%;
-}
-th{
-	background: #273b47;
-	color: white;
+body {
+    font-family: 'Comic Sans MS',sans-serif;
+  margin: 0;
 }
 
-th{
-	padding: 10px 20px;
-	text-align: center;
+.portada {
+  background-image: url('../images/background.png');
+  color: white;
+  padding: 20px;
 }
-td{
-	padding: 20px;
+
+.contenedor {
+  width: 800px;
+  margin: auto;
 }
-table,td,th{
-	border: 1px solid #273b47;
-	border-collapse: collapse;
+
+.titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 70px;
+  margin-bottom: 0;
+  margin-top: 70px;
+}
+
+.title-a {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.title-b {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+button {
+  border-radius: 5px;
+  border: none;
+  background: #fd324e;
+  color: white;
+  padding: 7px;
+}
+.guitarras {
+  color: #1F313C;
+}
+
+.guitarras h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+}
+
+
+
+
+.portada button {
+  margin-bottom: 70px;
+}
+
+
+.menu {
+  font-size: 24px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+
+.logotipo {
+  display: inline-block;
+}
+
+
+
+
+.guitarra {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #1F313C;
+  border-radius: 8px;
+}
+.guitarra ol {
+  padding: 0;
+}
+
+
+.derecha {
+  float: right;
+  position: relative;
+  top: -127px;
+}
+
+.izquierda {
+  float: left;
+  position: relative;
+  top: 80px;
+}
+
+.contenedor-guitarra-a {
+  padding-left: 20px;
+}
+.contenedor-guitarra-b {
+  margin-left: 370px;
+
+}
+
+.header {
+  position: relative;
+}
+
+
+table {
+  width: 100%;
+}
+
+th {
+  background: #273b47;
+  color: white;
+}
+
+th {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+td {
+  padding: 25px;
+}
+
+table, td, th {
+  border: 1px solid #273b47;
+  border-collapse: collapse;
+}
+
+
+input, textarea {
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  background: lightgray;
+}
+
+.contenedor {
+  /* Mi ancho de contenido y mi alineado estan ahora en una sola clase */
+  width: 800px;
+  margin: auto;
+  position: relative;
+}
+
+.background {
+  background-image: url("https://jguerralla.github.io/invie/images/background.png"); /* Fondo */
+  background-size: cover; /* background-size: Especifica el tamaño de las imágenes de fondo. https://www.w3schools.com/cssref/css3_pr_background-size.asp */
+}
+
+.button {
+  border-radius: 50px; /* Permite definir cuanto de redondeadas serán las esquinas */
+  border: none;
+  color: white;
+  padding: 7px 12px;
+  font-size: 18px;
+  cursor: pointer; /* Especifica el cursor del ratón que se mostrará cuando se apunta sobre un elemento. https://www.w3schools.com/cssref/pr_class_cursor.asp */
+  text-decoration: none;
+  /* background: linear-gradient(to right,#ff7250,#fe344e); GRADIENTES EN CSS: https://www.w3schools.com/css/css3_gradients.asp */
+  /* IMPORTANTE: ENLACE PARA PERSONLAIZAR NUESTROS DEGRADADOS YA QUE DENTRO DE CSS CON LOS DEGRADADOS OCURRE ALGO Y ES QUE EN TODOS LOS NAVEGADORES SON INTERPRETADOS DE MANERA DIFERENTE Y CON UNA SINTAXIS DIFERENTE, ENTONCES EN ESTA WEB TE DA EL CODIGO PERFECTO PARA QUE SOPORTE TODOS LOS NAVEGADORES, INCLUSO INTERNET EXPLORER 6 http://www.colorzilla.com/gradient-editor/ */
+  background: #ff7050; /* Old browsers */
+  background: -moz-linear-gradient(left, #ff7050 0%, #fe364d 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #ff7050 0%,#fe364d 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #ff7050 0%,#fe364d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7050', endColorstr='#fe364d',GradientType=1 ); /* IE6-9 */
+}
+
+.titulo {
+  font-family: 'Montserrat', sans-serif; /* Tipografia cargada desde un CDN */
+  font-size: 70px; /* Tamaño de fuente */
+  margin-bottom: 0;
+  margin-top: 70px;
+}
+
+.titulo span {
+  text-decoration: underline; /* text-decoration: Se usa para establecer el formato de texto a subrayado (underline) y suprarrayado (overline), tachado (line-through) o parpadeo (blink). El subrayado y el suprarrayado son posicionados bajo el texto, mientras la línea a través de éste se posiciona por encima. https://developer.mozilla.org/es/docs/Web/CSS/text-decoration */
+}
+
+.title-a {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.title-b {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.guitarras {
+  color: #1F313C;
+  /* width: 800px; /* Recuerda el modelo de caja tiene un ancho por defecto lo modificamos con width http://learnlayout.com/margin-auto.html */
+  /* margin: auto; /* El valor auto (automático) toma el espacio que haya en sus extremos y así logra dar la sensación de centrar el elemento, más adelante veras otras técnicas para lograr este resultado. http://learnlayout.com/margin-auto.html
+  Esta comentado porque usamos un contenedor abajo
+  */
+  margin-bottom: 60px;
+}
+
+.guitarras h2 {
+  font-family: 'Montserrat', sans-serif; /* Tipografia cargada desde un CDN */
+  font-size: 35px;
+}
+
+.portada {
+  /* Los backgrounds pueden tener una imagen, un conjunto de imagenes, un color o un conjunto de colores. Los colores pueden estar en hexadecimal, rgb (cantidadRojo, cantidadVerde, cantidadAzul) o rgba (cantidadRojo, cantidadVerde, cantidadAzul y cantidadAlfa (transparencia))
+  Para colocar una imagen uso: background-image: url ('ruta de la imagen')
+  ../ Nos devuelve una carpeta atras */
+  color: white; /* Color del texto */
+  padding: 20px;
+  /* width: 800px;
+  margin: auto;
+  Esta comentado porque usamos un contenedor abajo
+  */
+  height: 500px; /* Establece la altura de un elemento. https://www.w3schools.com/cssref/pr_dim_height.asp */
+}
+
+.portada button {
+  margin-bottom: 70px;
+}
+
+/* En CSS toda propiedad que se agregan al padre se heredan a los elementos hijos. */
+
+/*
+Display- Es la propiedad para controlar la estructura, especifica el tipo de cuadro de representación utilizando un elemento
+display: block;
+El elemento genera un cuadro de elementos de bloque
+display: inline;
+El elemento genera uno o mas cuadros de elemento en una linea
+display: line-block;
+El elemento genera un caja de elemento de bloque que
+fluye con el contenido circulante como si fuera una sola
+caja en linea
+*/
+
+.menu {
+  font-size: 24px;
+  display: inline-block; /* inline-block lo que hace es tomar el tamaño que tenga el contenido de ese elemento */
+  position: absolute; /* Positions: Sirve para ubicar elementos, pueden recibir las propiedades top, bottom, left y right. Estas propiedades pueden recibir px, %(porcentajes), y demás valores (tambien en numeros negativos en el caso de px). Hay 6 tipos de positions, aunque los mas utilizados son relative, absolute y fixed */
+  right: 0;
+}
+
+.menu li {
+  /* Los li tenian un display list-item que es muy similar a un bloque y se ponian uno encima de otro, nosotros queremos que esten estos items al costado de invie inline-block nos lo coloca en linea y ademas en bloque */
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.menu li::before {
+  content: "∘";
+  color: white;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.logotipo {
+  display: inline-block;
+  /* IMPORTANTE: Tenemos que cambiar tanto al menu como al logotipo para que pueda poner el menu en el costado del logotipo, ya que en este caso mi figure tiene de display block y debemos cambiarselo */
+  margin-left: 0;
+}
+
+/* Al tener el display en inline-block podemos usar otras propiedades como padding, los bordes, margenes, etc... como si fueran elementos de bloque de una manera muy facil de manejar */
+
+/*
+Para no poner tres veces display: inline-block; se puede agrupar. Así optimizamos mucho mejor la carga de nuestra web:
+
+.menu, .logotipo, .menu li { display: inline-block; }
+
+*/
+
+/* La propiedad line-height especifica la altura de la caja tipo en línea (inline) que se usará para calcular la altura de la línea (excepto para cajas de tipo inline que no son texto, como las imágenes). La altura de la línea se calcula de forma que contenga en ella a todos los elementos. https://developer.mozilla.org/es/docs/Web/CSS/line-height */
+
+/* .header {
+  width: 800px;
+  margin: auto;
+}
+Esta comentado porque usamos un contenedor abajo
+*/
+
+.guitarra {
+  margin: 10px 10px 40px 10px;
+  padding: 10px;
+  /* overflow: hidden; Lo que hace es ocultar la parte que queda afuera del modelo de caja https://developer.mozilla.org/es/docs/Web/CSS/overflow */
+  border: 1px solid #1F313C;
+  border-radius: 8px; /* Permite definir cuanto de redondeadas serán las esquinas */
+}
+
+.guitarra ol {
+  padding: 0;
+}
+
+.guitarra.b {
+  height: 190px;
+}
+
+.derecha {
+  float: right; /* float: La propiedad CSS flotante especifica que un elemento debe colocarse a lo largo del lado izquierdo o derecho de su contenedor, permitiendo que el texto y los elementos en línea se envuelvan alrededor de él. El elemento se elimina del flujo normal de la página web, aunque sigue siendo una parte del flujo (en contraste con el posicionamiento absoluto). https://developer.mozilla.org/en-US/docs/Web/CSS/float */
+  position: relative; /* Positions: Sirve para ubicar elementos, pueden recibir las propiedades top, bottom, left y right. Estas propiedades pueden recibir px, %(porcentajes), y demás valores (tambien en numeros negativos en el caso de px). Hay 6 tipos de positions, aunque los mas utilizados son relative, absolute y fixed */
+  top: -127px; /* Esto es exactamente lo mismo que si yo pusiera bottom: 127px */
+}
+
+.izquierda {
+  float: left;
+  position: relative;
+  /* top: 80px; */
+}
+
+.contenedor-guitarra-a {
+  padding-left: 20px;
+}
+
+.contenedor-guitarra-b {
+  margin-left: 370px;
+  position: relative;
+  bottom: 90px;
+}
+
+.header {
+  position: relative;
+}
+
+.footer {
+  background: #273b47;
+  padding: 50px 10px;
+}
+
+.contacto {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contacto img {
+  display: block;
+}
+
+.contacto strong {
+  display: block;
+}
+
+.contacto a {
+  color: white;
+  text-decoration: none;
+  margin: 10px 10px 10px 0;
+}
+
+.footer .contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formulario {
+  display: flex;
+  width: 400px;
+  color: white;
+  /* padding: 50px 10px; */
+}
+
+.col1, .col2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.col1 {
+  margin-right: 15px;
+}
+
+.col2 {
+  align-items: flex-start;
+}
+
+.col2 .button {
+  margin-top: 15px;
+}
+
+.intereses label {
+  font-size: 11px;
+}
+
+.formulario label, .sexo, .intereses {
+  margin-bottom: 10px;
+}
+
+.sexo {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.tabla {
+  margin: 57px 0;
 }
